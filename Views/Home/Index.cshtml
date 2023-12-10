@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Simple Chat</title>
+</head>
+<body>
+    <div>
+        <input type="text" id="userInput" placeholder="Your name" />
+        <input type="text" id="messageInput" placeholder="Type your message" />
+        <button id="sendButton">Send</button>
+    </div>
+    <ul id="messagesList"></ul>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/5.0.5/signalr.min.js"></script>
+    <script src="~/js/chat.js"></script>
+
+    <script>
+        document.getElementById("sendButton").addEventListener("click", sendMessage);
+
+        function sendMessage() {
+            var user = document.getElementById("userInput").value;
+            var message = document.getElementById("messageInput").value;
+            connection.invoke("SendMessage", user, message).catch(function (err) {
+                return console.error(err.toString());
+            });
+        }
+    </script>
+</body>
+</html>
