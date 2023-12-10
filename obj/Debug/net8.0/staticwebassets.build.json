@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "Qiaqk6XjiqzXg0XgJn3hscf95pMtSNfs7Faj1inljsw=",
+  "Source": "SimpleChatApp",
+  "BasePath": "_content/SimpleChatApp",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "SimpleChatApp\\wwwroot",
+      "Source": "SimpleChatApp",
+      "ContentRoot": "C:\\Users\\Admin\\SimpleChatApp\\wwwroot\\",
+      "BasePath": "_content/SimpleChatApp",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Admin\\SimpleChatApp\\wwwroot\\js\\chat.js",
+      "SourceId": "SimpleChatApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\SimpleChatApp\\wwwroot\\",
+      "BasePath": "_content/SimpleChatApp",
+      "RelativePath": "js/chat.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\chat.js"
+    }
+  ]
+}
